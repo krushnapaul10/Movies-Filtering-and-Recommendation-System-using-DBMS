@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database System</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Database System</h1>
+
+        <!-- Dropdown for Movie Search -->
+        <div id="dropdown-container">
+            <button onclick="fetchMovies()">View All Movies</button>
+            <div>
+                <label for="genre-select">Search by Genre:</label>
+                <select id="genre-select">
+                    <option value="">Select Genre</option>
+                    <option value="Action">Action</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Mythological">Mythological</option>
+                    <option value="Historical">Historical</option>
+                    <option value="Mystery">Mystery</option>
+                </select>
+                <button onclick="showGenreSearch()">Search</button>
+            </div>
+            <div>
+                <label for="platform-select">Find Movies on Platform:</label>
+                <select id="platform-select">
+                    <option value="">Select Platform</option>
+                    <option value="Netflix">Netflix</option>
+                    <option value="Zee5">Zee5</option>
+                    <option value="Jio Cinema">Jio Cinema</option>
+                    <option value="Prime Video">Prime Video</option>
+                    <option value="Disney+ Hotstar">Disney+ Hotstar</option>
+                </select>
+                <button onclick="showPlatformSearch()">Search</button>
+            </div>
+            <button onclick="showMovieDetails()">Get Movie Details</button>
+        </div>
+
+        <!-- Advanced Search Section -->
+        <div id="advanced-search">
+            <label for="search-type">Search by:</label>
+            <select id="search-type">
+        
+                <option value="rating">Rating</option>
+                <option value="revenue">Revenue</option>
+            </select>
+
+           
+            <button onclick="showAdvancedSearch()">Advanced Search</button>
+        </div>
+        <div class="container">
+            
+           
+        
+
+        <div id="output"></div>
+    </div>
+
+    <!-- Reference JavaScript file -->
+    <script src="static/scripts.js"></script>
+</body>
+</html>
